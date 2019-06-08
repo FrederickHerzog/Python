@@ -1,6 +1,10 @@
 #Frederick Herzog
-
-import tkinter as tk 
+try:
+    # Python2
+    import Tkinter as tk
+except ImportError:
+    # Python3
+    import tkinter as tk
 
 HEIGHT = 300
 WIDTH = 400
