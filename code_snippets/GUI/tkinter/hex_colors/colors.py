@@ -2,9 +2,13 @@
 Frederick Herzog
 A GUI for looking up hex color codes
 '''
-
-import tkinter as tk 
 import csv
+try:
+    # Python2
+    import Tkinter as tk
+except ImportError:
+    # Python3
+    import tkinter as tk
 
 HEIGHT = 300
 WIDTH = 400
@@ -13,8 +17,8 @@ COLOR = '#5d8aa8'
 def getCode(variable):
 	output.delete(0.0, tk.END)
 	output.insert(tk.END, data[variable])
-	l1 = tk.Label(frame, text="Preview:", bg=COLOR)
-	l1.place(relx=.3, rely=.7, relwidth=.4, relheight=.1)
+	l = tk.Label(frame, text="Preview:", bg=COLOR)
+	l.place(relx=.3, rely=.7, relwidth=.4, relheight=.1)
 	prev = tk.Label(frame, bg=data[variable])
 	prev.place(relx=.3, rely=.8, relwidth=.4, relheight=.1)
 
