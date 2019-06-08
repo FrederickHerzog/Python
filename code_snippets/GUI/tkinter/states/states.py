@@ -43,7 +43,7 @@ states = list(state_cap.keys())
 state_pops = makeDict('populations.csv')
 st_flowers = makeDict('flowers.csv')
 coor = makeDict('coordinates.csv')
-birds = makeDict('bird.csv')
+birds = makeDict('birds.csv')
 founded = makeDict("founded.csv")
 
 window = tk.Tk()
