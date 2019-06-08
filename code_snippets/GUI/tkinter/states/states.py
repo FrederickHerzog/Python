@@ -38,7 +38,7 @@ def makeDict(file):
 
 HEIGHT = 600
 WIDTH = 700
-state_cap = makeDict('states.csv')
+state_cap = makeDict('capitals.csv')
 states = list(state_cap.keys())
 state_pops = makeDict('populations.csv')
 st_flowers = makeDict('flowers.csv')
