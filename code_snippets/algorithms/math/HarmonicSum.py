@@ -9,4 +9,6 @@ def harmonSum(n):
         s += 1 / i
     return s
 
+#test
 r = harmonSum(10)
+print(r)
