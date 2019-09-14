@@ -1,5 +1,5 @@
 ##Frederick Herzog
-# 6 algorithms for computing fibonacci numbers
+# 6 different algorithms for computing # the fibonacci numbers
 from math import sqrt
 
 #1.Recursive function to compute the nth fibonacci number.
