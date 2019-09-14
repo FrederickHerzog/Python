@@ -3,16 +3,19 @@
 from math import sqrt
 
 #1.Recursive function to compute the nth fibonacci number.
+
 def fib_Rec(n):  
 	if n < 2: return n
 	else: return fib_Rec(n - 1) + fib_Rec(n - 2)
 
 #2.Another recursive fibonacci algorithm
+
 def fib_Rec2(term, val=1, prev=0):
 	if term == 0: return prev
 	return fib_Rec2(term-1, val+prev, val)
 
 #3.
+
 MAX = 1000
 # Create an array for memoization 
 f = [0] * MAX
@@ -42,6 +45,7 @@ def fib(n) :
 #4.Fast doubling Fibonacci algorithm.
 # Credit: Project Nayuki.
 # https://www.nayuki.io/page/fast-fibonacci-algorithms
+
 def _fibonac(n):
 	if n < 0:
 		raise ValueError("Negative arguments not implemented")
@@ -60,6 +64,7 @@ def _fib(n):
 			return (d, c + d)
 
 #5. 
+
 def fibs(n):
 	a = 0
 	b = 1
@@ -77,6 +82,8 @@ def fibs(n):
 		return b 
 
 #6.Directly implementing the formula
+# phi^n / sqrt(5), rounding the result
+
 def fiba(n):
   phi = (1 + sqrt(5)) / 2 
   return round(pow(phi, n) / sqrt(5))
