@@ -11,6 +11,9 @@ def fibs(n):
         a += 1
     return fibs
 
+def goldRatio(l):
+    pass
+
 #test
 x = fibs(20)
 print(x)
