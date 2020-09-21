@@ -22,11 +22,22 @@ class Coin:
 
 def main():
 	my_coin = Coin()
+	my_coin2 = Coin()
 
 	print("This side is up:", my_coin.get_sideup())
 
 	print('I am tossing the coin...')
 	my_coin.toss()
 	print('This side is up:', my_coin.get_sideup())
+	
+	print()
+	print()
+	
+	print("This side is up:", my_coin2.get_sideup())
+	tosses = input("How many times do you want to flip the coin?")
+	for i in range(tosses):
+		my_coin2.toss()
+		print(my_coin2.get_sideup())
+		
 
 main()
