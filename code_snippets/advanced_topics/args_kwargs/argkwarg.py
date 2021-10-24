@@ -1,13 +1,16 @@
 from datetime import datetime
 
 def magic(*args, **kwargs) -> tuple:
+    date = datetime.now().strftime("%D - %H%M.%S")
     a = args
     k = kwargs
-    return (*a, [*k.items()])
+    return (*a, [*k.items()], date)
+
+def magic2():
+    pass
     
-date = datetime.now().strftime("%D - %H%M.%S")
 r = True
-i = magic(date,
+i = magic(1212,
     "Welcome",
     name="Rick", 
     age=33, 
@@ -17,4 +20,4 @@ i = magic(date,
     n = {11, 12, 12, 13, 14}
       )
 
-print(i[2])
+print(i)
